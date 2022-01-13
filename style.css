@@ -37,8 +37,6 @@ header{
 .frase{
 	font-family: 'Licorice', cursive;
 	font-size: 5vw;
-	
-	border: 1px solid pink;
 	text-align: center;
 	z-index: -5;
 }
