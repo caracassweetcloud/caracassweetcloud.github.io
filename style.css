@@ -38,6 +38,7 @@ header{
 	font-family: 'Licorice', cursive;
 	font-size: 5vw;
 	text-align: center;
+        border:none;
 	z-index: -5;
 }
 .container{
