@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	background-image: url(img/back.png);
+	overflow: hidden;
+}
+@keyframes arriba{
+	to{
+		margin-top: -20%;
+	}
+}
+@keyframes abajo{
+	to{
+		margin-top: 20%;
+	}
+}
+
+#arriba{
+	animation-name: arriba;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+#abajo{
+	animation-name: abajo;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+
+.icon{
+	width: 15vh;
+}
+header{
+	text-align: center;
+	background-color: #C7B1FA;
+	z-index: 10;
+}
+.frase{
+	font-family: 'Licorice', cursive;
+	font-size: 5vw;
+	
+	border: 1px solid pink;
+	text-align: center;
+	z-index: -5;
+}
+.container{
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.nube{
+	width: 70vw;
+	z-index: -1;
+	position: absolute;
+}
+.all{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 1000px;
+}
+@media (max-device-width: 400px){
+	.all{
+		margin-top:300px; 
+	}
+	.frase{
+		font-size: 9vw;
+	}
+	.container{
+		width: 500px;
+	}
+	.nube{
+		width: 100vw;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sweetcloud Frase de la suerte</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+			<img class="icon" src="img/logo.png">
+	</header>
+	<div class="all">
+		<div class="container">
+			<img class="nube" id="arriba" src="img/nube.png">
+		</div>
+		<div class="container">
+			<h2 class="frase"></h2>
+		</div>
+		<div class="container">
+			<img class="nube" id="abajo" src="img/nube.png">
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		let frases = [
+			"Donde pones tus pensamientos, pones tu energía",
+			"No hay metas inalcanzables, solo gente que se cansa a mitad de camino.",
+			"El único límite es tu mente",
+			"Cree en ti y todo sera posible.",
+			"Siempre dile si, a un buen habito.",
+			"Si puedes soñarlo puedes hacerlo.",
+			"Podrán robarte las ideas, pero nunca el talento.",
+			"El amor verdadero es conocer los defectos de una persona y amarla incluso más por ellos",
+			"Todo lo que admiras en los demás es el reflejo de algo que ya está en ti.",
+			"Comienza hoy, no esperes la perfección... eso no existe.",
+			"Disfruta de las pequeñas cosas que nos regala la vida",
+			"Nunca te sentirás 100% lista. Ya es hora, no esperes más.",
+			"Nadie encuentra su camino sin perderse varias veces ",
+			"Esta bien darte un respiro.",
+			"Sé amable siempre que puedas.",
+			"Eres la favorita del universo y siempre te dara lo mejor"
+		];
+		let frase = document.querySelector(".frase");
+		/*let header = document.querySelector("header");
+		let container = document.querySelector(".container")*/
+		frase.textContent = frases[Math.floor(Math.random()*frases.length)];
+		/*let nube = document.querySelectorAll(".nube");
+		container.style.height = nube[0].offsetHeight + "px";
+		for(let n of Array.from(nube)){
+			n.style.top = header.offsetHeight + "px";
+		}
+		*/
+	</script>
+</body>
+</html>
